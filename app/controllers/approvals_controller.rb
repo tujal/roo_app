@@ -1,6 +1,10 @@
 class ApprovalsController < ApplicationController
 
-    def new
+    def index
+        @approvals = Approval.all.page(params[:page])
+    end
+
+     def new
         # Render your upload form here
       end
     

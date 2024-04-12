@@ -69,3 +69,4 @@ group :test do
 end
 gem 'roo'
 gem 'creek'
+gem 'kaminari'

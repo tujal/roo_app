@@ -1,2 +1,10 @@
 <%= link_to "Import Excel", new_approval_path %>
-
+<h1><% @approvals.count %></h1>
+<table>
+<% @approvals.each do | app| %>
+    <tr>
+         <td> <%= app.registration_number %></td>
+   </tr>
+ <% end %>
+ </table>
+ <%= paginate @approvals %>
